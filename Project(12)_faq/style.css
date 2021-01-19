@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.heading {
+  background-color: tomato;
+  width: 100vw;
+  height: 40vh;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.heading h1 {
+  margin-top: 100px;
+}
+
+.container {
+  margin-top: -70px;
+}
+
+.faq {
+  background-color: #fffaef;
+  max-width: 70%;
+  margin: 20px auto;
+  padding: 15px 40px;
+  border-radius: 10px;
+  max-width: 1000px;
+  min-width: 1000px;
+  position: relative;
+}
+
+.faq-question {
+  font-size: 20px;
+  color: gray;
+}
+
+.faq.active .faq-question {
+  font-size: 22px;
+  color: tomato;
+}
+
+.faq-answer {
+  display: none;
+  max-width: 85%;
+  margin-top: 35px;
+  line-height: 1.5;
+  color: gray;
+}
+
+.faq.active .faq-answer {
+  display: block;
+}
+
+button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+button .fa-times {
+  display: none;
+}
+
+.faq.active .fa-times {
+  display: block;
+}
+
+.faq.active .fa-chevron-down {
+  display: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  color: tomato;
+}
